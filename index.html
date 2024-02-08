@@ -55,7 +55,12 @@
 'NAPS is doing the hard work of helping people get the rest they need. — U.S. News'
 ]
 
-document.getElementById('press-quote').textContent;
+let randomNumber =  Math.floor(Math.random()*quotesArray.length) // Generates a random integer btwn 0-6
+
+
+document.getElementById('press-quote').textContent = '“ ' + quotesArray[randomNumber].split('—')[0];
+' “ — ' + quotesArray[randomNumber].split(' — ')[1] // 
+
 
 </script>
 
